@@ -1,13 +1,20 @@
 const { test } = require('@playwright/test')
 const { LoginPage } = require('../../pages/LoginPage')
+const { WaitHelper } = require('../../helpers/WaitHelper')
 
 test('Login', async ({ page }) => {
 
-    const login = new LoginPage(page)
+    const login = new LoginPage(page);
 
-    await login.navigate()
+    await login.navigate();
 
-    await login.loginUser('standard_user', 'secret_sauce')
+    await login.loginUser('standard_user', 'secret_sauce');
+
+    await WaitHelper.visible(page.locator('#inventory_container').first());
+
+
+
+
 
     // locators
     // page.locator('#login')
