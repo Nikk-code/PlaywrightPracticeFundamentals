@@ -1,14 +1,14 @@
-const { test } = require('@playwright/test')
+const { test } = require('../../fixtures/baseFixture')
 const { LoginPage } = require('../../pages/LoginPage')
 const { WaitHelper } = require('../../helpers/WaitHelper')
 
-test('Login', async ({ page }) => {
+test('Login', async ({ loginPage, page }) => {
 
-    const login = new LoginPage(page);
+    // const login = new LoginPage(page);
 
-    await login.navigate();
+    await loginPage.navigate();
 
-    await login.loginUser('standard_user', 'secret_sauce');
+    await loginPage.loginUser('standard_user', 'secret_sauce');
 
     await WaitHelper.visible(page.locator('#inventory_container').first());
 
