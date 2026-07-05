@@ -1,0 +1,14 @@
+{
+ "name": "playwright-framework",
+ "scripts": {
+  "test": "playwright test",
+  "headed": "playwright test --headed",
+  "chrome": "playwright test --project=chromium",
+  "parallel": "playwright test --workers=4"
+ },
+ "devDependencies": {
+  "@playwright/test": "latest",
+  "dotenv": "^17.4.2",
+  "xlsx": "^0.18.5"
+ }
+}
