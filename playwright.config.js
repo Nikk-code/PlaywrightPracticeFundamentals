@@ -22,7 +22,7 @@ module.exports = defineConfig({
 
     use: {
 
-        headless: false,
+        headless: process.env.HEADED === 'true' ? false : true,
 
         screenshot: 'only-on-failure',
 

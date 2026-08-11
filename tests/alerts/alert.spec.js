@@ -54,3 +54,19 @@ test('Handle JS Alert', async ({ page }) => {
 // Playwright registers this listener and waits.
 
 // Nothing happens yet.
+
+
+
+
+
+// const { test } = require('@playwright/test');
+
+test('', async ({ page }) => {
+
+    page.on('', async dialog => {
+        console.log(dialog.message());
+
+        await dialog.accept();
+    });
+
+})
