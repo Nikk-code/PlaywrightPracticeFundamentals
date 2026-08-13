@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Playwright Test Outputs (Screenshots, Videos, Traces, Reports)
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Custom execution artifacts in your project
+reports/
+screenshots/
+traces/
+
+# Environment Variables & Secrets (Keep your keys secure)
+.env
+.env.*
+!.env.example
+
+# Editor-specific folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+Thumbs.db
+.DS_Store

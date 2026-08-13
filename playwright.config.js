@@ -22,6 +22,8 @@ module.exports = defineConfig({
 
     use: {
 
+        baseURL: 'https://restful-booker.herokuapp.com',
+
         headless: process.env.HEADED === 'true' ? false : true,
 
         screenshot: 'only-on-failure',
