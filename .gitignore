@@ -8,6 +8,8 @@ test-results/
 playwright-report/
 blob-report/
 playwright/.cache/
+playwright-report/
+test-results/
 
 # Custom execution artifacts in your project
 reports/
@@ -31,3 +33,5 @@ traces/
 # OS-specific files
 Thumbs.db
 .DS_Store
+
+
