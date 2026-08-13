@@ -1,0 +1,4 @@
+# Tell GitHub to ignore generated test reports and results in language statistics
+playwright-report/** linguist-generated
+test-results/** linguist-generated
+blob-report/** linguist-generated
