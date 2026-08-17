@@ -1,4 +1,5 @@
 {
+ "type": "module",
  "name": "playwright-framework",
  "scripts": {
   "test": "playwright test",
@@ -8,8 +9,13 @@
  },
  "devDependencies": {
   "@playwright/test": "latest",
+  "@types/luxon": "^3.7.4",
   "@types/node": "^26.2.0",
   "dotenv": "^17.4.2",
   "xlsx": "^0.18.5"
+ },
+ "dependencies": {
+  "@faker-js/faker": "^10.6.0",
+  "luxon": "^3.7.2"
  }
 }
